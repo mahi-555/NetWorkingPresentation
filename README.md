@@ -1,14 +1,12 @@
-TCP Congestion and Slow Start Algorithm
-Presentation Overview
+**TCP Congestion and Slow Start Algorithm**
+
+**Presentation Overview**
 This repository contains an academic presentation about TCP Congestion
 Control and the Slow Start Algorithm. It explains how Transmission
 Control Protocol (TCP) adjusts its sending rate to use network capacity
 efficiently while reducing the risk of congestion.
 
-Prepared by Monira Akter Mahin (ID: IT24017), Department of
-Information and Communication Technology (ICT), Mawlana Bhashani Science
-and Technology University (MBSTU), Bangladesh.
-Objectives
+**Objectives**
 - Explain network congestion and its effects on communication.
 - Describe the TCP congestion window (cwnd) and slow start threshold
   (ssthresh).
@@ -16,7 +14,7 @@ Objectives
 - Introduce Additive Increase and Multiplicative Decrease (AIMD).
 - Describe Fast Retransmit and Fast Recovery.
 - Compare the congestion responses of TCP Tahoe, TCP Reno, and CUBIC.
-Presentation Contents
+**Presentation Contents**
 1. Introduction and research problem
 2. Background: What is network congestion?
 3. Related work and research gap
@@ -30,7 +28,7 @@ Presentation Contents
 11. Quantitative comparison
 12. Conclusions and future work
 13. Selected references
-Key Concepts
+**Key Concepts**
 Congestion Window (cwnd)
 The congestion window controls how much unacknowledged data a TCP sender
 may have in the network. TCP adjusts this window according to network
@@ -59,20 +57,20 @@ The presentation uses an idealised, textbook RTT-round model of a
 single TCP flow over one bottleneck link. It compares TCP Tahoe and TCP
 Reno under the same threshold and loss event.
 
-The illustrated evaluation measures are:
+**The illustrated evaluation measures are:**
 - Congestion window size (cwnd) in segments per RTT
 - Recovery behaviour after packet loss
 Important: The graphs and numerical examples are illustrative model
 results, not measurements collected from a live network or a dataset.
 The presentation suggests that the behaviour could be reproduced or
 investigated further using ns-3 or Wireshark.
-Main Discussion
+**Main Discussion**
 The presentation highlights that TCP Reno can recover more quickly than
 TCP Tahoe after three duplicate ACKs because Reno uses Fast Recovery
 instead of restarting the congestion window from one segment. In the
 simplified comparison, both algorithms restart from one segment after a
 timeout.
-Tools and Technologies Mentioned
+**Tools and Technologies Mentioned**
 - TCP: Transmission Control Protocol
 - RTT: Round-Trip Time
 - Wireshark: Network protocol analyser suggested for further
@@ -80,13 +78,13 @@ Tools and Technologies Mentioned
 - ns-3: Network simulator suggested for future experiments
 No software implementation or live network experiment is included in the
 presentation itself.
-Future Work
+**Future Work**
 - Simulate TCP flows using ns-3.
 - Capture and analyse TCP traffic using Wireshark.
 - Compare Reno, CUBIC, and BBR under different network conditions.
 - Study the effects of delay, packet loss, buffer size, and competing
   traffic.
-References
+**References**
 1. V. Jacobson, "Congestion Avoidance and Control," ACM SIGCOMM, 1988.
 2. M. Allman, V. Paxson, and E. Blanton, "TCP Congestion Control," RFC
    5681, IETF, 2009.
@@ -94,7 +92,7 @@ References
    Long-Distance Networks," RFC 9438, IETF, 2023.
 4. N. Cardwell et al., "BBR: Congestion-Based Congestion Control,"
    Communications of the ACM, 2017.
-Presenter
+**Presenter**
 Monira Akter Mahin
 ID: IT24017
 Department of Information and Communication Technology (ICT)
